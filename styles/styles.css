@@ -1,6 +1,560 @@
 @charset "UTF-8";
 /* portfolio styles */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	min-height: 10px;
+	background-image: url(../images/background2.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Navigation bar styles */
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+    top: 0;
+    width: 98.9%;
+	display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+	border-right: 1px solid #bbb;
+	font-size: 30px;
+	font-family: 'Abril Fatface', cursive;
+	width: 20%;
+	align-content: center;
+}
+
+.logo a {
+	color: #B6FCE4;
+}
+
+li {
+    float: left;
+	margin: 10px;
+	font-size: 120%;
+	width: 10%;
+	display: inline;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.pages:hover {
+    background-color: #5E5C5C;
+}
+
+.active {
+	background: #B6FCE4;
+}
+
+.active a {
+	color: black;
+}
+
+.search {
+	margin-left: 15%;
+}
+
+/* Index styles */
+
+#header {
+	margin-top: 4%;
+	margin-left: 37.5%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+img.round {
+	border-radius: 50%;
+	margin-left: 39%;
+	margin-top: 13%;
+    transform: rotate(20deg);
+	position: fixed;
+}
+/* Index texts */
+
+#student {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 23%;
+	border-radius: 5px;
+	background: rgba(94,92,92,0.5);
+	width: 23%;
+}
+
+#student a {
+	text-decoration: none;
+	color: black;
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+}
+
+#friend {
+	position: fixed;
+	margin-left: 69%;
+	margin-top: 23%;
+	border-radius: 5px;
+	background: rgba(94,92,92,0.5);
+	width: 23%;
+}
+#friend a {
+	text-decoration: none;
+	color: black;
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+}
+
+#multimedia {
+	position: fixed;
+	margin-left: 39%;
+	margin-top: 43%;
+	border-radius: 5px;
+	background: rgba(94,92,92,0.5);
+	width: 23%;
+}
+#multimedia a {
+	text-decoration: none;
+	color: black;
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;
+}
+
+/* Contact page */
+
+#header-contact {
+	margin-top: 4%;
+	margin-left: 40.7%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+/* Contact form */
+
+input[type=text], textarea {
+    width: 100%;
+	hegiht: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #B6FCE4;
+	color: black;
+}
+
+.container {
+    border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+    padding: 20px;
+	margin-top: 16%;
+	margin-left: 72%;
+	width: 24%;
+	height: 43%;
+	position: fixed;
+}
+/* Contact info */
+.boxed {
+	border-radius: 5px;
+	background: rgba(94,92,92,0.5);
+	position: fixed;
+	margin-top: 21%;
+	margin-left: 0.5%;
+	width: 25%;
+	height: 25%;
+	text-align: center;
+}
+
+.name {
+	color: #B6FCE4;
+}
+
+.hotmail {
+	color: #B6FCE4;
+}
+
+.number {
+	color: #B6FCE4;
+}
+
+.website {
+	text-decoration: none;
+	color: #B6FCE4;
+}
+
+.facebook {
+	text-decoration: none;
+	color: #B6FCE4;
+}
+
+.website:hover {
+	background-color: black;
+}
+
+.facebook:hover {
+	background-color: black;
+}
+
+/* About page */
+
+#header-about {
+	margin-top: 4%;
+	margin-left: 34.9%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+/* About boxes */
+
+/* Personal */
+.boxed-a {
+	border-radius: 5px;
+	background: rgba(94,92,92,0.5);
+	position: fixed;
+	margin-top: 20%;
+	margin-left: 4.5%;
+	width: 24%;
+	height: 31%;
+	text-align: center;
+	line-height: 135%
+}
+
+.boxed-a p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* School and experience */
+.boxed-b {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	top:10.5%;
+    bottom: 0;
+    left: 0.9%;
+    right: 0;
+    margin: auto;
+	width: 24%;
+	height: 52%;
+	text-align: center;
+	line-height: 135%;
+	
+}
+
+.boxed-b p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/* Hobbies */
+.boxed-c {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: right;
+	margin-top: 20%;
+	margin-left: 70.6%;
+	width: 24%;
+	height: 31%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.boxed-c p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/* Footer about */
+.footer {
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	position: fixed;
+    bottom: 0;
+    width: 98.9%;
+	height: 6%;
+	display: flex;
+    align-items: center;
+}
+
+.emailf {
+	margin: 6.5%;
+	font-size: 100%;
+	width: 10%;
+    color: #B6FCE4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.phonef {
+	margin: 6.5%;
+	font-size: 100%;
+	width: 10%;
+    color: #B6FCE4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.websitef {
+	margin: 6.5%;
+	font-size: 100%;
+	width: 10%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.facebookf {
+	margin: 6.5%;
+	font-size: 100%;
+	width: 10%;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.websitef a {
+	color: #B6FCE4;
+	
+}
+
+.facebookf a {
+	color: #B6FCE4;
+}
+
+/* My work styles*/
+
+#header-work {
+	margin-top: 4%;
+	margin-left: 35.4%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+.photoshop {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 15%;
+	margin-left: 2%;
+	width: 27%;
+	height: 60%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.photoshop p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.photoshop a {
+	color: black;
+}
+
+.photoshop a:hover {
+	color: #B6FCE4;
+}
+
+.photoshop img {
+	border-radius: 5px;
+}
+
+.portfolio {	
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: right;
+	margin-top: 15%;
+	margin-left: 36%;
+	width: 27%;
+	height: 60%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.portfolio p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.portfolio a {
+	color: black;
+}
+
+.portfolio a:hover {
+	color: #B6FCE4;
+}
+
+.portfolio img {
+	border-radius: 5px;
+}
+
+.portfolio1 {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: right;
+	margin-top: 15%;
+	margin-left: 70%;
+	width: 27%;
+	height: 60%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.portfolio1 p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.portfolio1 a {
+	color: black;
+}
+
+.portfolio1 a:hover {
+	color: #B6FCE4;
+}
+
+.portfolio1 img {
+	border-radius: 5px;
+}
+
+/* Dream your portfolio */
+#header-portfolio {
+	margin-top: 4%;
+	margin-left: 30.3%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+.dream-portfolio {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 12%;
+	margin-left: 0.1%;
+	width: 45%;
+	height: 70%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.dream-portfolio p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.dream-portfolio a {
+	color: black;
+}
+
+.dream-portfolio a:hover {
+	color: #B6FCE4;
+}
+
+.dream-portfolio img {
+	border-radius: 5px;
+}
+
+.dream-portfolio2 {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 12%;
+	margin-left: 53.8%;
+	width: 45%;
+	height: 70%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.dream-portfolio2 p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.dream-portfolio2 a {
+	color: black;
+}
+
+.dream-portfolio2 a:hover {
+	color: #B6FCE4;
+}
+
+.dream-portfolio2 img {
+	border-radius: 5px;
 }
