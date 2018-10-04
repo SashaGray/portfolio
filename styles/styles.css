@@ -12,6 +12,7 @@ body {
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+	background-size: 100%;
 }
 
 /* Navigation bar styles */
@@ -24,7 +25,7 @@ body {
 	position: fixed;
     top: 0;
     width: 98.9%;
-	display: inline-flex;
+	display: flex;
     align-items: center;
 }
 
@@ -45,7 +46,8 @@ li {
 	margin: 10px;
 	font-size: 120%;
 	width: 10%;
-	display: inline;
+	display: block;
+	transition-duration: 0.3s;
 }
 
 li a {
@@ -126,13 +128,15 @@ img.round {
 }
 
 #multimedia {
-	position: fixed;
+	position: absolute;
+	float: top;
 	margin-left: 39%;
 	margin-top: 43%;
 	border-radius: 5px;
 	background: rgba(94,92,92,0.5);
 	width: 23%;
 }
+
 #multimedia a {
 	text-decoration: none;
 	color: black;
@@ -245,7 +249,12 @@ input[type=submit]:hover {
 
 /* About boxes */
 
+.text {
+	text-align: left;
+}
+
 /* Personal */
+
 .boxed-a {
 	border-radius: 5px;
 	background: rgba(94,92,92,0.5);
@@ -384,46 +393,13 @@ input[type=submit]:hover {
 	position: fixed;
 }
 
-.photoshop {
+.portfolio {
 	border-radius: 5px;
     background: rgba(94,92,92,0.5);
 	position: fixed;
 	float: left;
-	margin-top: 15%;
+	margin-top: 14%;
 	margin-left: 2%;
-	width: 27%;
-	height: 60%;
-	text-align: center;
-	line-height: 135%;
-}
-
-.photoshop p {
-	font-size: 110%;
-	word-spacing: 1px;
-	font-weight: 500;
-	padding-left: 5px;
-	padding-right: 5px;
-}
-
-.photoshop a {
-	color: black;
-}
-
-.photoshop a:hover {
-	color: #B6FCE4;
-}
-
-.photoshop img {
-	border-radius: 5px;
-}
-
-.portfolio {	
-	border-radius: 5px;
-    background: rgba(94,92,92,0.5);
-	position: fixed;
-	float: right;
-	margin-top: 15%;
-	margin-left: 36%;
 	width: 27%;
 	height: 60%;
 	text-align: center;
@@ -448,6 +424,8 @@ input[type=submit]:hover {
 
 .portfolio img {
 	border-radius: 5px;
+	width: 90%;
+	height: 42%;
 }
 
 .portfolio1 {
@@ -455,8 +433,8 @@ input[type=submit]:hover {
     background: rgba(94,92,92,0.5);
 	position: fixed;
 	float: right;
-	margin-top: 15%;
-	margin-left: 70%;
+	margin-top: 14%;
+	margin-left: 36%;
 	width: 27%;
 	height: 60%;
 	text-align: center;
@@ -481,7 +459,45 @@ input[type=submit]:hover {
 
 .portfolio1 img {
 	border-radius: 5px;
+	width: 90%;
+	height: 42%;
 }
+
+.photoshop {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: right;
+	margin-top: 14%;
+	margin-left: 70%;
+	width: 27%;
+	height: 60%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.photoshop p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.photoshop a {
+	color: black;
+}
+
+.photoshop a:hover {
+	color: #B6FCE4;
+}
+
+.photoshop img {
+	border-radius: 5px;
+	width: 90%;
+	height: 42%;
+}
+
 
 /* Dream your portfolio */
 #header-portfolio {
@@ -524,6 +540,8 @@ input[type=submit]:hover {
 
 .dream-portfolio img {
 	border-radius: 5px;
+	width: 81%;
+	height: 51%;
 }
 
 .dream-portfolio2 {
@@ -557,4 +575,87 @@ input[type=submit]:hover {
 
 .dream-portfolio2 img {
 	border-radius: 5px;
+	width: 81%;
+	height: 51%;
+}
+
+/* Build your portfolio */
+
+#header-portfolio2 {
+	margin-top: 4%;
+	margin-left: 30.3%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+.build-portfolio {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 11.5%;
+	margin-left: 0.1%;
+	width: 45%;
+	height: 72%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.build-portfolio p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.build-portfolio a {
+	color: black;
+}
+
+.build-portfolio a:hover {
+	color: #B6FCE4;
+}
+
+.build-portfolio img {
+	border-radius: 5px;
+	width: 81%;
+	height: 51%;
+}
+
+.build-portfolio2 {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 11.5%;
+	margin-left: 53.8%;
+	width: 45%;
+	height: 72%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.build-portfolio2 p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.build-portfolio2 a {
+	color: black;
+}
+
+.build-portfolio2 a:hover {
+	color: #B6FCE4;
+}
+
+.build-portfolio2 img {
+	border-radius: 5px;
+	width: 81%;
+	height: 51%;
 }
