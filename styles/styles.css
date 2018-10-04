@@ -659,3 +659,84 @@ input[type=submit]:hover {
 	width: 81%;
 	height: 51%;
 }
+
+/* Photos & websites */
+
+#header-photos {
+	margin-top: 4%;
+	margin-left: 39.5%;
+	text-align: center;
+	font-size: 180%;
+	font-weight: bolder;
+	position: fixed;
+}
+
+.photos {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 11.5%;
+	margin-left: 0.1%;
+	width: 45%;
+	height: 72%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.photos p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.photos a {
+	color: black;
+}
+
+.photos a:hover {
+	color: #B6FCE4;
+}
+
+.photos img {
+	border-radius: 5px;
+	width: 75%;
+	height: 65%;
+}
+
+.photos1 {
+	border-radius: 5px;
+    background: rgba(94,92,92,0.5);
+	position: fixed;
+	float: left;
+	margin-top: 11.5%;
+	margin-left: 53.8%;
+	width: 45%;
+	height: 72%;
+	text-align: center;
+	line-height: 135%;
+}
+
+.photos1 p {
+	font-size: 110%;
+	word-spacing: 1px;
+	font-weight: 500;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.photos1 a {
+	color: black;
+}
+
+.photos1 a:hover {
+	color: #B6FCE4;
+}
+
+.photos1 img {
+	border-radius: 5px;
+	width: 75%;
+	height: 65%;
+}
