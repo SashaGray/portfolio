@@ -128,7 +128,7 @@ img.round {
 }
 
 #multimedia {
-	position: absolute;
+	position: fixed;
 	float: top;
 	margin-left: 39%;
 	margin-top: 43%;
